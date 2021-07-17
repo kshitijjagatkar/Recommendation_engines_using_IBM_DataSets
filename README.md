@@ -36,46 +36,20 @@ IV. Matrix Factorization
 Finally, we will complete a machine learning approach to building recommendations. Using the user-item interactions, we will build out a matrix decomposition.
 
 ## 4. File Structure & Description
-* app
+* Data
 
-  | - template
+  | - articles_community.csv
+    - user-item-interactions.csv
   
-  | |- base.html  #my-dashboard's base page
+  | - Recommendations_with_IBM.ipynb
   
-  | |- home.html #my-dashbord's welcome page
+  *Data : this folder has all data
   
-  | |- master.html # main page of web app
+  *Other files : There is main notebook file named "Recommendations_with_IBM.ipynb" which has all the code & rest files are needed while working.
   
-  | |- go.html # classification result page of web app
+  *README.md : this files has all description of the project.
   
-  |- run.py # Flask file that runs app
-
-* data
-
-  |- disaster_categories.csv # data to process
-  
-  |- disaster_messages.csv # data to process
-  
-  |- process_data.py
-  
-  |- disaster_response.db # database to save clean data to
-  
-* models
- 
-  |- train_classifier.py
-  
-  |- trained_model.pkl # saved model
-  
-  README.md
-  
-1. Data Directory
-      * This folder contains "process_data.py" which has all ETL code and perform pipeline tasks which takes input files "message.csv" &
-        "categories.csv" produces database file for our model.
-2. Model Directory
-      * This folder has "train_classifier.py" which takes database file perform ML pipeline and produces pickle file to use it in our flask app.
-4. App directory
-      * this folder contains web page code. "run.py" takes care of running server & all our code. upper folders are templetes and static which contain html 
-        & css, java files   respectively.
 
 ## 5. Installation & Run
-
+ 
+ This project doesn't need any extra installation if you have anaconda distribution installed.
